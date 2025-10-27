@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isola Paul - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <!-- Main Container -->
+    <div class="container mx-auto max-w-4xl px-6 py-12 md:py-20">
+
+        <!-- Header: Name, Title, GitHub Link -->
+        <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold text-indigo-600 dark:text-indigo-400">Isola Paul</h1>
+                <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mt-1">Software Developer</p>
+            </div>
+            <a href="https://github.com/isolapaul" target="_blank" rel="noopener noreferrer" 
+               class="mt-4 sm:mt-0 inline-flex items-center space-x-2 px-4 py-2 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 rounded-lg font-medium shadow-lg hover:bg-gray-700 dark:hover:bg-gray-300 transition-all transform hover:scale-105">
+                <!-- Beágyazott GitHub SVG ikon -->
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.379.202 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" />
+                </svg>
+                <span>My GitHub Profile</span>
+            </a>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-4 border-b-2 border-indigo-500 dark:border-indigo-400 pb-2">About Me</h2>
+            <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                Welcome to my portfolio page! I am a software developer passionate about building useful and efficient applications. 
+                I am currently most interested in Java, related technologies, and algorithmic problem-solving.
+                Below you can see some of my featured projects.
+            </p>
+        </section>
+
+        <!-- Project Section -->
+        <section>
+            <h2 class="text-3xl font-bold mb-8 border-b-2 border-indigo-500 dark:border-indigo-400 pb-2">Featured Projects</h2>
+            
+            <!-- Projekt kártyák rácsa -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Project 1: ChatApp Online -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col transform transition-all duration-300 hover:scale-[1.03] hover:shadow-xl">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-semibold mb-2 text-indigo-700 dark:text-indigo-300">Online Chat Application</h3>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">
+                            A multi-user, real-time chat application using Java Swing (GUI) and socket programming (networking).
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-100 dark:bg-gray-700">
+                        <a href="https://github.com/isolapaul/ChatApp-Online-Java-Swing" target="_blank" rel="noopener noreferrer" 
+                           class="inline-block w-full text-center px-5 py-3 bg-indigo-600 text-white font-medium rounded-lg shadow-md hover:bg-indigo-700 transition-colors">
+                           View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: LeetCode Solutions -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col transform transition-all duration-300 hover:scale-[1.03] hover:shadow-xl">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-semibold mb-2 text-indigo-700 dark:text-indigo-300">LeetCode Solutions</h3>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">
+                            Data structure and algorithm problem solutions from the LeetCode platform, helping to improve problem-solving skills.
+                        </pa>
+                    </div>
+                    <div class="p-6 bg-gray-100 dark:bg-gray-700">
+                        <a href="https://github.com/isolapaul/LeetCode_Solutions" target="_blank" rel="noopener noreferrer" 
+                           class="inline-block w-full text-center px-5 py-3 bg-indigo-600 text-white font-medium rounded-lg shadow-md hover:bg-indigo-700 transition-colors">
+                           View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- More projects coming soon -->
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 dark:text-gray-400 mt-20 border-t border-gray-200 dark:border-gray-700 pt-8">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Isó Pál. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
